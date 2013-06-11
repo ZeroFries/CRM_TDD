@@ -13,6 +13,6 @@ class TestContacts < Test::Unit::TestCase
 	end
 
 	def test_contact_has_id
-		assert_equal @contact.id, 1
+		assert_equal @contact.id, 67
 	end
 end

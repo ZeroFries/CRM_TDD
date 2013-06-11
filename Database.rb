@@ -1,4 +1,4 @@
 require_relative "Contact.rb"
 
-class Contact
+class Database
 end
