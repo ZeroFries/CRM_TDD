@@ -1,5 +1,5 @@
 class String
-    def to_number
+    def to_number #gives position of letter in alphabet
       [*("a".."z")].index(self).to_i + 1
     end
 end
@@ -15,13 +15,10 @@ def initialize(params)
   @id = id_constructor
 end
 
-private
-
-  def id_constructor
-  	name_array = []
-  	name_array = @first_name.downcase.split('')
-  	@last_name.split.each { |letter| name_array << letter.downcase }
-  	name_array.inject(0) { |sum, letter| sum += letter.to_number }
-  end
-
+def id_constructor
+  name_array = []
+ 	name_array = @first_name.downcase.split('')
+ 	@last_name.split.each { |letter| name_array << letter.downcase }
+ 	name_array.inject(0) { |sum, letter| sum += letter.to_number }
+end
 end
